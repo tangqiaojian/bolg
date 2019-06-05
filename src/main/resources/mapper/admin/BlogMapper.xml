@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cc.mrbird.admin.dao.BlogMapper">
+
+
+    <select id="findAllBlogContext" resultType="map">
+      select * from ts_blog_title
+    </select>
+
+    <select id="findCount" resultType="int">
+        select COUNT(id) from ts_blog_title
+    </select>
+
+
+</mapper>
