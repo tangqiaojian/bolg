@@ -6,10 +6,24 @@
     <link rel="stylesheet" th:href="@{/layui/css/layui.css}">
 </head>
 <script th:src="@{/layui/layui.all.js}"></script>
+<script th:src="@{/js/common.js}"></script>
 <script th:src="@{/js/admin/blog/blog_title_add.js}"></script>
+<script th:src="@{/js/admin/blog/jquery-1.9.1.js}"></script>
 <body>
+<script type="text/html" id="toolbarDemo">
+    <div class="layui-btn-container">
+        <button class="layui-btn layui-btn-sm"  data-type="getCheckData">获取选中行数据</button>
+        <button class="layui-btn layui-btn-sm"  data-type="getCheckLength">获取选中数目</button>
+        <button class="layui-btn layui-btn-sm"  data-type="isAll">验证是否全选</button>
+    </div>
+</script>
+<script type="text/html" id="barDemo">
+    <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+</script>
+
 <div class="card">
-<table class="layui-hide" id="titile"></table>
+<table class="layui-hide" id="lable_msg" lay-filter="lable_msg"></table>
 </div>
 </body>
 </html>
